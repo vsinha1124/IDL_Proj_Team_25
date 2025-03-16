@@ -10,6 +10,7 @@
         * [Using HumanEval](#using-humaneval)
         * [Run the evaluation notebook](#run-the-evaluation-notebook)
     * [Important Notes](#important-notes)
+    * [Results](#results)
 
 # CodeLlama Evaluation Guide
 
@@ -169,3 +170,12 @@ def generate_code(prompt):
 * The evaluation process may take some time, depending on the model and the size of the dataset.
 * Make sure you have accepted the Meta agreement, otherwise the model will not be downloadable.
 * Make sure you have the correct huggingface token and that it is properly set in the notebook.
+
+## Results
+| Metric | Accuracy|
+|----------|----------|
+| Accuracy@t1 | 27.44 |
+| Accuracy@t2 | 28.68 |
+| delta(t1,t2) | 1.29 |
+| delta(t1,t2) i to c | 1.829 |.
+| delta(t2,t1) c to i | 0.609 |.
